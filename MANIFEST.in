@@ -1,0 +1,7 @@
+include README.md
+include MANIFEST.in
+include requirements.txt
+recursive-include tabis_manager *.json *.py *.html
+recursive-include tabis_manager/public *
+recursive-include tabis_manager/config *
+
