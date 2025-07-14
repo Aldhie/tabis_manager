@@ -1,11 +1,12 @@
-# hooks.py
+from . import __version__ as app_version
+
 app_name = "tabis_manager"
 app_title = "Tabis Manager"
-app_publisher = "Tabis"
+app_publisher = "Aldhie"
 app_description = "Custom application for Trabis."
-app_email = "apps-support@globaltelko.com"
+app_email = "email@anda.com"
 app_license = "MIT"
 
-# Biarkan kosong jika Anda belum memiliki file JS/CSS kustom
+# Biarkan kosong untuk sekarang
 app_include_css = []
 app_include_js = []

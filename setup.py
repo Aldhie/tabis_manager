@@ -1,23 +1,18 @@
-# setup.py
 from setuptools import setup, find_packages
 
-# Ganti dengan informasi aplikasi Anda
-__version__ = "0.0.1"
-app_name = "tabis_manager"
-app_title = "Tabis Manager"
-app_publisher = "Trabis"
-app_description = "Custom application for Trabis."
-app_email = "apps-support@globaltelko.com"
-app_license = "MIT"
+with open("README.md", "r", encoding="utf-8") as f:
+    readme = f.read()
 
 setup(
-    name=app_name,
-    version=__version__,
-    description=app_title,
-    author=app_publisher,
-    author_email=app_email,
-    license=app_license,
+    name="tabis_manager",
+    version="0.0.1",
+    description="Custom application for Trabis.",
+    long_description=readme,
+    long_description_content_type="text/markdown",
+    author="Aldhie",
+    author_email="email@anda.com",
     packages=find_packages(),
+    zip_safe=False,
     include_package_data=True,
-    install_requires=[], # Tambahkan dependensi Python di sini jika ada
+    install_requires=["frappe"],
 )
